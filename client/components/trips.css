@@ -1,0 +1,14 @@
+.trips-container {
+  flex: 3;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  box-shadow: #ccc -1px -1px 1px;
+  position: relative;
+}
+
+.my-trips {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}

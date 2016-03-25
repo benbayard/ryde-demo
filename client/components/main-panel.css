@@ -1,0 +1,11 @@
+.main-panel {
+  display: flex;
+
+  max-width: 960px;
+  width: calc(100% - 80px);
+
+  margin: 0px auto;
+
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}

@@ -1,0 +1,23 @@
+body
+  - header
+    - logo
+    - user-dropdown
+  - main
+    - user-summary
+      - user-basic-information
+      - user-calls-to-action
+        * active
+        * new
+      - lost-something
+    - user-trips
+      - filter
+      - header
+      - trips-summary
+        - trip-header
+        - trip
+          * pickup-date
+          * driver-name
+          * fare
+          * car
+          * city
+          * payment-method

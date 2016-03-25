@@ -1,0 +1,22 @@
+.account-cta {
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.account-cta-text {
+  flex: 1;
+}
+
+.account-cta.is-active {
+  font-weight: bold;
+}
+
+.account-cta .new-flag {
+  text-align: right;
+  float: right;
+  font-weight: bold;
+  font-size: .8rem;
+  color: #1fbad6;
+}
