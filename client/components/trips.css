@@ -36,6 +36,10 @@
   border-bottom: 1px solid #dfdfdf;
 }
 
+.trips-table .row-active td {
+  border-bottom: 0px;
+}
+
 .trips-table tbody tr:last-of-type td {
   border-bottom: 0px;
 }
@@ -50,4 +54,14 @@
 
 .trips-table .icon-cc-mastercard {
   color: #ff9900;
+}
+
+.icon-chevron-right:before {
+  display: inline-block;
+  transition: transform .25s ease;
+}
+
+.row-active .icon-chevron-right:before {
+  display: inline-block;
+  transform: rotate(90deg);
 }

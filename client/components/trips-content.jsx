@@ -55,10 +55,11 @@ export const TripsContent = (props) => {
           active
         }) => {
           const activeClasses = classnames({
-            "row-inactive": !active
+            "row-inactive": !active,
+            "row-active": active
           });
           rows.push(
-            <tr key={id} className="activeClasses">
+            <tr key={id} className={activeClasses}>
               <td onClick={() => (active ? collapseTrip(id) : expandTrip(id))}><span className="icon-chevron-right"/></td>
               <td>{`${month}/${day}/${year}`}</td>
               <td>{driver.name}</td>
