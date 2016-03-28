@@ -4,8 +4,11 @@
   "description": "An uber \"Your Rides\" clone.",
   "main": "server/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --harmony --harmony_rest_parameters --harmony_destructuring tests/server",
-    "start": "node --harmony --harmony_rest_parameters --harmony_destructuring ./server/index.js"
+    "test": "npm run frontend-test && npm run backend-test",
+    "start": "node --harmony --harmony_rest_parameters --harmony_destructuring ./server/index.js",
+    "frontend-test": "karma start karma.conf.js --single-run",
+    "backend-test": "./node_modules/.bin/mocha --harmony --harmony_rest_parameters --harmony_destructuring tests/server",
+    "build": "webpack --config webpack.config.dev.js"
   },
   "author": "Ben Bayard",
   "license": "MIT",
@@ -14,12 +17,14 @@
     "classnames": "^2.2.3",
     "css-loader": "^0.23.1",
     "express": "^4.13.4",
+    "fetch": "^1.0.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
     "redux-thunk": "^2.0.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.4",
@@ -40,7 +45,6 @@
     "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.6",
     "react-addons-test-utils": "^0.14.7",
-    "react-dom": "^0.14.7",
     "sinon": "^1.17.3",
     "webpack": "^1.12.14"
   }

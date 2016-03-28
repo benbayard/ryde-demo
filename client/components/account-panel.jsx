@@ -27,6 +27,17 @@ export const AccountPanel = () => {
           text: "Log Out"
         }]}
       />
+      <section className="lost-something">
+        <a href="http://uber.com/lost">
+          <section>
+            <span className="icon-search"/>
+          </section>
+          <section>
+            <p className="lost-question">Lost Something?</p>
+            <p className="lost-link">Check out uber.com/lost</p>
+          </section>
+        </a>
+      </section>
     </section>
   );
 };

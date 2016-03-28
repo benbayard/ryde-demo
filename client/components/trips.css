@@ -1,7 +1,7 @@
 .trips-container {
   flex: 3;
-  padding: 20px;
-  border-left: 1px solid #ccc;
+  padding: 20px 0px;
+  border-left: 1px solid #dfdfdf;
   box-shadow: #ccc -1px -1px 1px;
   position: relative;
 }
@@ -11,4 +11,43 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.trips-table {
+  width: 100%;
+  font-size: .9rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.trips-table th {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.trips-table tr {
+  height: 50px;
+
+}
+
+.trips-table td, .trips-table th {
+  vertical-align: middle;
+  padding: 0px .75rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.trips-table tbody tr:last-of-type td {
+  border-bottom: 0px;
+}
+
+.trips-table [class *= icon-cc] {
+  margin-right: 5px;
+}
+
+.trips-table .icon-cc-visa {
+  color: 	#1a1f71;
+}
+
+.trips-table .icon-cc-mastercard {
+  color: #ff9900;
 }

@@ -13,7 +13,7 @@ module.exports = function (config) {
     },
 
     reporters: [ "spec" ],
-
+    singleRun: true,
     webpack: {
       devtool: "source-map",
       externals: {

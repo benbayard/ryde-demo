@@ -1,3 +1,27 @@
 .account-panel {
   flex: 1;
 }
+
+.lost-something a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  padding: .75rem 0px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.lost-link {
+  font-size: .8rem;
+}
+
+.lost-question {
+  color: #1fbad6;
+  font-size: 1.1rem;
+  margin-bottom: .25rem;
+}
+
+.icon-search {
+  font-size: 1.4rem;
+  padding: .5rem;
+}

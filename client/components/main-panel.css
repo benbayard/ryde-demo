@@ -6,6 +6,6 @@
 
   margin: 0px auto;
 
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border: 1px solid #dfdfdf;
+  border-top-width: 0px;
 }

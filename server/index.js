@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
   </head>
   <body>
       <div id="react-anchor" />
-      <script type="text/javascript" src="http://localhost:8080/bundle.js" charset="utf-8"></script>
+      <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 
   </body>
 </html>
